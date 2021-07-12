@@ -1,0 +1,17 @@
+{
+  "name": "1-eslint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/eslint-plugin": "^7.14.5",
+    "@baidu/eslint-config-sfe-typescript": "^1.0.3",
+    "eslint": "^7.30.0"
+  }
+}
