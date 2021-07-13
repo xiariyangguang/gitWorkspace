@@ -15,7 +15,7 @@
     "test"
   ],
   "lint-staged": {
-    "src/**/*.ts": "eslint --cache --fix"
+    "src/*.ts": "eslint --cache --fix"
   },
   "keywords": [],
   "author": "",
