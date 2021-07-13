@@ -6,13 +6,17 @@
   "scripts": {
     "test": "echo \"Error: I SHOULD FAIL LOLOLOLOLOL \" && exit 0",
     "foo": "echo \"fooo\" && exit 0",
-    "bar": "echo \"bar\" && exit 0"
+    "bar": "echo \"bar\" && exit 0",
+    "prepare": "husky install"
   },
   "pre-commit": [
     "foo",
     "bar",
     "test"
   ],
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -20,6 +24,8 @@
     "@babel/eslint-plugin": "^7.14.5",
     "@baidu/eslint-config-sfe-typescript": "^1.0.3",
     "eslint": "^7.30.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.0.0",
     "pre-commit": "^1.2.2"
   }
 }
