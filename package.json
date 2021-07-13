@@ -4,8 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: I SHOULD FAIL LOLOLOLOLOL \" && exit 0",
+    "foo": "echo \"fooo\" && exit 0",
+    "bar": "echo \"bar\" && exit 0"
   },
+  "pre-commit": [
+    "foo",
+    "bar",
+    "test"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
